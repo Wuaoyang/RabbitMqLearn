@@ -2,17 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0975da36-0d35-4a2c-a50f-c45ea27f6adb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fanout/Consume1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fanout/Consume2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fanout/Consume3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fanout/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/workqueue/Consume1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/workqueue/Consume2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/direct/Consume1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/direct/Consume2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/direct/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/DirectCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/FanoutCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/HelloCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/RabbitMqProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/RabbitmqSrpingbootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/WorkCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/topic/Consumer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/topic/Consumer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/topic/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workqueue/WorkQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workqueue/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workqueue/WorkQueue$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workqueue/WorkQueue$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workqueue/WorkQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DirectConnection$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DirectConnection$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DirectConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DirectConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/RabbitMQUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/RabbitMQUtils.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,40 +42,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/workqueue/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/workqueue/Consume1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/workqueue/Consume2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Product.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,22 +54,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Consume1.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/topic/Consumer2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="443">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spring/RabbitMqProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
+                <element signature="e#1100#1101#0" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1271#1272#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Consume2.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spring/DirectCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+            <state relative-caret-position="206">
+              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#636#637#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#1018#1019#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,42 +108,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Consume3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="225">
+              <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/DefaultConsumer.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spring/FanoutCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="454">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/Channel.class">
+        <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/org/springframework/amqp/spring-rabbit/2.2.11.RELEASE/spring-rabbit-2.2.11.RELEASE.jar!/org/springframework/amqp/rabbit/annotation/RabbitListener.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2325">
-              <caret line="109" column="61" selection-start-line="109" selection-start-column="61" selection-end-line="109" selection-end-column="61" />
+            <state relative-caret-position="-349">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spring/HelloCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+            <state relative-caret-position="-50">
+              <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="3" />
               <folding>
-                <element signature="e#20727#20728#0" expanded="true" />
-                <element signature="e#20771#20772#0" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spring/WorkCustomer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#150#151#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,6 +177,14 @@
     <findStrings>
       <find>log</find>
       <find>handleDe</find>
+      <find>basicPublish</find>
+      <find>direct</find>
+      <find>queueDeclare(</find>
+      <find>queueDeclare</find>
+      <find>basicConsume</find>
+      <find>host</find>
+      <find>password</find>
+      <find>message</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/DirectConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/RabbitMQUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/workqueue/DirectConnection.java" />
@@ -171,8 +203,26 @@
         <option value="$PROJECT_DIR$/src/main/java/fanout/product.java" />
         <option value="$PROJECT_DIR$/src/main/java/fanout/Consume1.java" />
         <option value="$PROJECT_DIR$/src/main/java/fanout/Consume3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fanout/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/fanout/Consume2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fanout/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/direct/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/direct/Consume2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/direct/Consume1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/topic/consumer1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/topic/Consumer1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/topic/product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/topic/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/topic/Consumer2.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/RabbitmqSrpingbootApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/RabbitmqSrpingbootApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/RabbitMqDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/HelloCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/WorkCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/FanoutCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/RabbitMqProduct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/DirectCustomer.java" />
       </list>
     </option>
   </component>
@@ -192,15 +242,20 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="com-aosun-rabbitmq" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -208,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,26 +302,47 @@
               <item name="src" type="72ca9032:PsiDirectoryNodeCustom" />
               <item name="main" type="72ca9032:PsiDirectoryNodeCustom" />
               <item name="java" type="72ca9032:PsiDirectoryNodeCustom" />
-              <item name="workqueue" type="72ca9032:PsiDirectoryNodeCustom" />
+              <item name="spring" type="72ca9032:PsiDirectoryNodeCustom" />
+            </path>
+            <path>
+              <item name="com-aosun-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-aosun-rabbitmq" type="72ca9032:PsiDirectoryNodeCustom" />
+              <item name="src" type="72ca9032:PsiDirectoryNodeCustom" />
+              <item name="main" type="72ca9032:PsiDirectoryNodeCustom" />
+              <item name="java" type="72ca9032:PsiDirectoryNodeCustom" />
+              <item name="topic" type="72ca9032:PsiDirectoryNodeCustom" />
+            </path>
+            <path>
+              <item name="com-aosun-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-aosun-rabbitmq" type="72ca9032:PsiDirectoryNodeCustom" />
+              <item name="src" type="72ca9032:PsiDirectoryNodeCustom" />
+              <item name="main" type="72ca9032:PsiDirectoryNodeCustom" />
+              <item name="resources" type="72ca9032:PsiDirectoryNodeCustom" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600876964008" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601395187486" />
     <property name="last_opened_file_path" value="D:/广软-项目" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="direct" />
+      <recent name="fanout" />
       <recent name="workqueue" />
     </key>
   </component>
@@ -283,79 +358,112 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Product (1)">
-    <configuration name="Consume1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fanout.Consume1" />
-      <module name="com-aosun-rabbitmq" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fanout.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Consume2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fanout.Consume2" />
-      <module name="com-aosun-rabbitmq" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fanout.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Consume3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fanout.Consume3" />
-      <module name="com-aosun-rabbitmq" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fanout.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Product (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fanout.Product" />
-      <module name="com-aosun-rabbitmq" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fanout.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RabbitMqProduct.testFanout">
     <configuration name="Product" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="workqueue.Product" />
+      <option name="MAIN_CLASS_NAME" value="topic.Product" />
       <module name="com-aosun-rabbitmq" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="workqueue.*" />
+          <option name="PATTERN" value="topic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloCustomer.receive1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-aosun-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spring" />
+      <option name="MAIN_CLASS_NAME" value="spring.HelloCustomer" />
+      <option name="METHOD_NAME" value="receive1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitMqProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-aosun-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spring" />
+      <option name="MAIN_CLASS_NAME" value="spring.RabbitMqProduct" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitMqProduct.testFanout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-aosun-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spring" />
+      <option name="MAIN_CLASS_NAME" value="spring.RabbitMqProduct" />
+      <option name="METHOD_NAME" value="testFanout" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitMqProduct.testHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-aosun-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spring" />
+      <option name="MAIN_CLASS_NAME" value="spring.RabbitMqProduct" />
+      <option name="METHOD_NAME" value="testHello" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitMqProduct.testWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-aosun-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spring" />
+      <option name="MAIN_CLASS_NAME" value="spring.RabbitMqProduct" />
+      <option name="METHOD_NAME" value="testWork" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitmqSrpingbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com-aosun-rabbitmq" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="spring.RabbitmqSrpingbootApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Product (1)" />
-        <item itemvalue="Application.Consume3" />
-        <item itemvalue="Application.Consume2 (1)" />
-        <item itemvalue="Application.Consume1 (1)" />
-        <item itemvalue="Application.Product" />
+        <item itemvalue="JUnit.RabbitMqProduct.testFanout" />
+        <item itemvalue="JUnit.RabbitMqProduct.testWork" />
+        <item itemvalue="JUnit.RabbitMqProduct.testHello" />
+        <item itemvalue="JUnit.RabbitMqProduct" />
+        <item itemvalue="JUnit.HelloCustomer.receive1" />
       </list>
     </recent_temporary>
   </component>
@@ -374,6 +482,12 @@
       <workItem from="1600698109202" duration="1747000" />
       <workItem from="1600781277292" duration="4551000" />
       <workItem from="1600866298547" duration="5175000" />
+      <workItem from="1600953799121" duration="3807000" />
+      <workItem from="1601048862143" duration="3289000" />
+      <workItem from="1601084361398" duration="9228000" />
+      <workItem from="1601216356262" duration="1564000" />
+      <workItem from="1601303441038" duration="2173000" />
+      <workItem from="1601392328848" duration="2778000" />
     </task>
     <task id="LOCAL-00001" summary="学习RabbitMq - 更新中">
       <created>1600785004602</created>
@@ -386,39 +500,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WorkQueue_consume2 - 2020.09.22 at 22h 34m 52s.xml">
-      <configuration name="WorkQueue.consume2" configurationId="JUnit" />
+    <history-entry file="RabbitMqDemo_testHello - 2020.09.29 at 23h 35m 45s.xml">
+      <configuration name="RabbitMqDemo.testHello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkQueue_consume1 - 2020.09.22 at 22h 35m 05s.xml">
-      <configuration name="WorkQueue.consume1" configurationId="JUnit" />
+    <history-entry file="RabbitMqDemo_testHello - 2020.09.29 at 23h 36m 39s.xml">
+      <configuration name="RabbitMqDemo.testHello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkQueue_consume2 - 2020.09.22 at 22h 35m 11s.xml">
-      <configuration name="WorkQueue.consume2" configurationId="JUnit" />
+    <history-entry file="HelloCustomer_receive1 - 2020.09.29 at 23h 39m 24s.xml">
+      <configuration name="HelloCustomer.receive1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkQueue_consume2 - 2020.09.22 at 22h 36m 27s.xml">
-      <configuration name="WorkQueue.consume2" configurationId="JUnit" />
+    <history-entry file="RabbitMqProduct - 2020.09.29 at 23h 39m 36s.xml">
+      <configuration name="RabbitMqProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkQueue_consume1 - 2020.09.22 at 22h 36m 32s.xml">
-      <configuration name="WorkQueue.consume1" configurationId="JUnit" />
+    <history-entry file="RabbitMqProduct_testHello - 2020.09.29 at 23h 40m 11s.xml">
+      <configuration name="RabbitMqProduct.testHello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Product - 2020.09.22 at 22h 40m 16s.xml">
-      <configuration name="Product" configurationId="JUnit" />
+    <history-entry file="RabbitMqProduct_testHello - 2020.09.29 at 23h 42m 16s.xml">
+      <configuration name="RabbitMqProduct.testHello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Consume1 - 2020.09.22 at 22h 40m 25s.xml">
-      <configuration name="Consume1" configurationId="JUnit" />
+    <history-entry file="RabbitMqProduct_testHello - 2020.09.29 at 23h 44m 11s.xml">
+      <configuration name="RabbitMqProduct.testHello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Product_produce - 2020.09.22 at 22h 40m 37s.xml">
-      <configuration name="Product.produce" configurationId="JUnit" />
+    <history-entry file="RabbitMqProduct_testWork - 2020.09.29 at 23h 51m 47s.xml">
+      <configuration name="RabbitMqProduct.testWork" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Consume1_consume1 - 2020.09.22 at 22h 40m 41s.xml">
-      <configuration name="Consume1.consume1" configurationId="JUnit" />
+    <history-entry file="RabbitMqProduct_testFanout - 2020.09.29 at 23h 55m 11s.xml">
+      <configuration name="RabbitMqProduct.testFanout" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Consume2_consume1 - 2020.09.22 at 22h 40m 44s.xml">
-      <configuration name="Consume2.consume1" configurationId="JUnit" />
+    <history-entry file="RabbitMqProduct_testFanout - 2020.09.29 at 23h 55m 28s.xml">
+      <configuration name="RabbitMqProduct.testFanout" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21024000" />
+    <option name="totallyTimeSpent" value="43863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -433,16 +547,19 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25603217" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2774799" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.36402267" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.28470254" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38668555" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -457,7 +574,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.5449516" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.54490614" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="leetcode" order="5" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
@@ -480,13 +597,6 @@
   <component name="editorHistoryManager">
     <entry file="file://D:/广软-项目/配置文件/apache-maven-3.6.0/conf/settings.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/ConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.pom">
       <provider selected="true" editor-type-id="text-editor">
@@ -524,33 +634,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/Product.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/RabbitMQUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DirectConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/Connection.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -558,10 +641,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/Channel.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/workqueue/Consume1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2325">
-          <caret line="109" column="61" selection-start-line="109" selection-start-column="61" selection-end-line="109" selection-end-column="61" />
+        <state relative-caret-position="450">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Consume2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="2" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/DefaultConsumer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -576,10 +676,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/workqueue/Consume1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/direct.java" />
+    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/AMQP.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="36700">
+          <caret line="1580" column="19" selection-start-line="1580" selection-start-column="19" selection-end-line="1580" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/impl/AMQImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70275">
+          <caret line="3267" column="13" selection-start-line="3267" selection-start-column="13" selection-end-line="3267" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/Channel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2275">
+          <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/direct/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/RabbitMQUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/ConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11775">
+          <caret line="591" column="41" selection-start-line="591" selection-start-column="41" selection-end-line="591" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Consume1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -588,69 +737,279 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/workqueue/Consume2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="550">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/workqueue/Product.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/direct/Consume1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="650">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/com/rabbitmq/amqp-client/5.7.2/amqp-client-5.7.2.jar!/com/rabbitmq/client/DefaultConsumer.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/topic/Consumer1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Consume1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="525">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Consume3.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/direct/Consume2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="475">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/workqueue/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DirectConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/junit/junit/4.12/junit-4.12.jar!/org/junit/Test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/org/springframework/amqp/spring-rabbit/2.2.11.RELEASE/spring-rabbit-2.2.11.RELEASE.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="552" column="16" selection-start-line="552" selection-start-column="16" selection-end-line="552" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/RabbitmqSrpingbootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Consume2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/topic/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        <state relative-caret-position="356">
+          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/topic/Consumer2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/广软-项目/甘肃文档文件/testMaven/org/springframework/amqp/spring-rabbit/2.2.11.RELEASE/spring-rabbit-2.2.11.RELEASE.jar!/org/springframework/amqp/rabbit/annotation/RabbitListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/HelloCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/WorkCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/RabbitMqProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fanout/Consume3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/FanoutCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/DirectCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>com-aosun-rabbitmq</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.67241377" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.rabbitmq:amqp-client:5.7.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
